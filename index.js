@@ -6,7 +6,7 @@ var loaderUtils = require('loader-utils'),
 	path = require('path'),
 	nativeCss = require('native-css')
 	fs = require('fs'),
-	querystring = require('querystring');
+	childProcess = require('child_process');
 
 module.exports = function(content) {
 
@@ -25,33 +25,39 @@ console.log('__filename', __filename);
 		regExp: query.regExp
 	});
 
+// var path 			= 'tmp/';
+var that 			= this
+,	path 			= __dirname + '/tmp/'
+,	newUrl 		= path+url
+,	compiled, compiledJson, exportString
+;
 
-var newUrl 		= 'tmp/'+url;
-fs.readdir('tmp', function(err) {
-	if (err)
+
+var callback 	= function() {
+	compiled 		= nativeCss.convert( 'node_modules/cssobjects-loader/tmp/7e6b01ef53845fdde6a1953032b084cc.css' );
+	compiledJson = JSON.stringify(compiled);
+	that.emitFile(url, compiledJson);
+	exportString = ''+compiledJson;
+}
+
+fs.readdir(path, function(err) {
+	if (err) // dir not found
 		throw err;
 	console.log('tmp dir found' );
+
 	fs.writeFile(newUrl, content, 'utf8', function(err) {
 		console.log('writeFile newUrl', newUrl,  err);
+		callback();
 	});
 });
 
-var compiled 		= nativeCss.convert( newUrl );
-var compiledJson = JSON.stringify(compiled);
-console.log('compiled', compiled);
-
-var exportString = ''+compiledJson;
-
-this.options.outputDirectory = 'tmp';
-
-console.log('typeof, nativeCss', typeof compiled, compiled);
-
-
-
-
+compiled 		= nativeCss.convert( 'node_modules/cssobjects-loader/tmp/'+url );
+compiledJson = JSON.stringify(compiled);
+that.emitFile(url, compiledJson);
+exportString = ''+compiledJson;
 
 this.emitFile(url, compiledJson);
-// newUrlRealtive 	= '../../..'+url;
+// // newUrlRealtive 	= '../../..'+url;
 return 'module.exports =  ' + exportString + ';';
 
 	// return 'module.exports =  __webpack_public_path__ + ' + JSON.stringify(url) + ';';

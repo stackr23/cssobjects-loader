@@ -1,6 +1,6 @@
 {
   "name": "cssobjects-loader",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "author": {
     "name": "Stefan Friedl @DoubleU23"
   },
@@ -12,7 +12,7 @@
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
-    "native-css": "^1.2.0",
+    "native-css": "git+https://github.com/DoubleU23/native-css.git#webpack-compatibility",
     "path": "^0.12.7",
     "should": "^7.1.1"
   },
@@ -20,7 +20,7 @@
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
-    "native-css": "^1.2.0",
+    "native-css": "git+https://github.com/DoubleU23/native-css.git#webpack-compatibility",
     "path": "^0.12.7",
     "should": "^7.1.1"
   },
@@ -37,8 +37,8 @@
     "test": "test"
   },
   "license": "MIT",
-  "_id": "cssobjects-loader@0.1.3",
-  "_shasum": "749a59b740be03403cf59bda1c3f98a8d9e90cce",
+  "_id": "cssobjects-loader@0.2.5",
+  "_shasum": "74012df8d6cb24d8fdf6abf8c1b8298c020f1f71",
   "_from": "cssobjects-loader@*",
   "_npmVersion": "2.14.7",
   "_nodeVersion": "4.2.1",
@@ -56,5 +56,8 @@
     "shasum": "749a59b740be03403cf59bda1c3f98a8d9e90cce",
     "tarball": "http://registry.npmjs.org/cssobjects-loader/-/cssobjects-loader-0.1.3.tgz"
   },
-  "_resolved": "https://registry.npmjs.org/cssobjects-loader/-/cssobjects-loader-0.1.3.tgz"
+  "_resolved": "https://registry.npmjs.org/cssobjects-loader/-/cssobjects-loader-0.1.3.tgz",
+  "readme": "alpha",
+  "readmeFilename": "README.md",
+  "gitHead": "dbf60853dcd5fb78a1141ed13436173b1e19bfcd"
 }
