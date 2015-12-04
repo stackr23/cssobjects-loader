@@ -4,7 +4,7 @@
 */
 var loaderUtils = require('loader-utils'),
 	path = require('path'),
-	nativeCss = require('native-css/index.js')
+	nativeCss = require('native-css')
 	fs = require('fs'),
 	querystring = require('querystring');
 
