@@ -1,0 +1,54 @@
+{
+  "name": "cssobjects-loader",
+  "version": "0.1.3",
+  "author": {
+    "name": "Stefan Friedl @DoubleU23"
+  },
+  "description": "load CSS classes as JS Objects",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "loader-utils": "~0.2.5",
+    "native-css": "^1.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "fs": "0.0.2",
+    "mocha": "^2.3.4",
+    "should": "^7.1.1"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT",
+  "_id": "cssobjects-loader@0.1.3",
+  "_shasum": "749a59b740be03403cf59bda1c3f98a8d9e90cce",
+  "_from": "cssobjects-loader@*",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "doubleu23",
+    "email": "dev@project23.org"
+  },
+  "maintainers": [
+    {
+      "name": "doubleu23",
+      "email": "dev@project23.org"
+    }
+  ],
+  "dist": {
+    "shasum": "749a59b740be03403cf59bda1c3f98a8d9e90cce",
+    "tarball": "http://registry.npmjs.org/cssobjects-loader/-/cssobjects-loader-0.1.3.tgz"
+  },
+  "_resolved": "https://registry.npmjs.org/cssobjects-loader/-/cssobjects-loader-0.1.3.tgz"
+}
