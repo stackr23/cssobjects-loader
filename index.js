@@ -9,6 +9,12 @@ var loaderUtils = require('loader-utils'),
 	querystring = require('querystring');
 
 module.exports = function(content) {
+
+// console.log('process.env', process.env);
+console.log('__dirname', __dirname);
+console.log('__filename', __filename);
+
+
 	this.cacheable && this.cacheable();
 	if(!this.emitFile) throw new Error('emitFile is required from module system');
 	// parameters
@@ -19,28 +25,34 @@ module.exports = function(content) {
 		regExp: query.regExp
 	});
 
+
 var newUrl 		= 'tmp/'+url;
-var compiled 	= nativeCss.convert(url);
 fs.readdir('tmp', function(err) {
 	if (err)
 		throw err;
 
 	console.log('tmp dir found' );
-	fs.writeFile(newUrl, JSON.stringify(compiled), 'utf8', function(err) {
+	fs.writeFile(newUrl, content, 'utf8', function(err) {
 		console.log('writeFile newUrl', newUrl,  err);
 	});
 });
 
+var compiled 		= nativeCss.convert( newUrl );
+console.log('compiled', compiled);
 var compiledJson = JSON.stringify(compiled);
 
 this.options.outputDirectory = 'tmp';
 
-console.log('this', this);
 console.log('typeof, nativeCss', typeof compiled, compiled);
-this.emitFile(url, compiledJson);
 
 
-// +
+
+
+
+this.emitFile(url, content);
+// newUrlRealtive 	= '../../..'+url;
+// return 'module.exports =  ' + JSON.stringify(newUrlRealtive) + ';';
+
 	return 'module.exports =  __webpack_public_path__ + ' + JSON.stringify(url) + ';';
 }
 module.exports.raw = true;
