@@ -1,6 +1,6 @@
 {
   "name": "cssobjects-loader",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "author": {
     "name": "Stefan Friedl @DoubleU23"
   },
@@ -11,7 +11,7 @@
   "dependencies": {
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
-    "native-css": "git+https://github.com/DoubleU23/native-css.git",
+    "native-css": "git+https://github.com/DoubleU23/native-css.git#webpack-compatibility",
     "path": "^0.12.7",
     "should": "^7.1.1"
   },
