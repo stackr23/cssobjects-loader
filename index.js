@@ -10,11 +10,6 @@ var loaderUtils = require('loader-utils'),
 
 module.exports = function(content) {
 
-// console.log('process.env', process.env);
-console.log('__dirname', __dirname);
-console.log('__filename', __filename);
-
-
 	this.cacheable && this.cacheable();
 	if(!this.emitFile) throw new Error('emitFile is required from module system');
 	// parameters
@@ -32,9 +27,8 @@ var that 			= this
 ,	compiled, compiledJson, exportString
 ;
 
-
 var callback 	= function() {
-	compiled 		= nativeCss.convert( 'node_modules/cssobjects-loader/tmp/7e6b01ef53845fdde6a1953032b084cc.css' );
+	compiled 		= nativeCss.convert( 'node_modules/cssobjects-loader/tmp/'+url );
 	compiledJson = JSON.stringify(compiled);
 	that.emitFile(url, compiledJson);
 	exportString = ''+compiledJson;

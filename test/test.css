@@ -1,8 +1,3 @@
 .mui-button {
 	font-size: 20px;
 }
-
-/*
-	expected output
-	{ mui_button { 'font-size': '20px' } }
-*/
