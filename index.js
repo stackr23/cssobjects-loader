@@ -30,7 +30,6 @@ var newUrl 		= 'tmp/'+url;
 fs.readdir('tmp', function(err) {
 	if (err)
 		throw err;
-
 	console.log('tmp dir found' );
 	fs.writeFile(newUrl, content, 'utf8', function(err) {
 		console.log('writeFile newUrl', newUrl,  err);
@@ -38,8 +37,10 @@ fs.readdir('tmp', function(err) {
 });
 
 var compiled 		= nativeCss.convert( newUrl );
-console.log('compiled', compiled);
 var compiledJson = JSON.stringify(compiled);
+console.log('compiled', compiled);
+
+var exportString = ''+compiledJson;
 
 this.options.outputDirectory = 'tmp';
 
@@ -49,10 +50,10 @@ console.log('typeof, nativeCss', typeof compiled, compiled);
 
 
 
-this.emitFile(url, content);
+this.emitFile(url, compiledJson);
 // newUrlRealtive 	= '../../..'+url;
-// return 'module.exports =  ' + JSON.stringify(newUrlRealtive) + ';';
+return 'module.exports =  ' + exportString + ';';
 
-	return 'module.exports =  __webpack_public_path__ + ' + JSON.stringify(url) + ';';
+	// return 'module.exports =  __webpack_public_path__ + ' + JSON.stringify(url) + ';';
 }
 module.exports.raw = true;
