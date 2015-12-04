@@ -1,6 +1,6 @@
 {
   "name": "cssobjects-loader",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": {
     "name": "Stefan Friedl @DoubleU23"
   },
@@ -8,15 +8,14 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
-    "native-css": "https://github.com/raphamorim/native-css",
+    "mocha": "^2.3.4",
+    "native-css": "^1.2.0",
     "path": "^0.12.7",
     "should": "^7.1.1"
-  },
-  "devDependencies": {
-    "mocha": "^2.3.4"
   },
   "scripts": {
     "test": "mocha -R spec"
