@@ -1,3 +1,0 @@
-{
-  "styles": "Ooops!\nError: CSS file not found!"
-}
