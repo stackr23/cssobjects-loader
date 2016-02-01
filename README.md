@@ -23,4 +23,16 @@
 ```Javascript
 // in your JS
 let style 	= require('css-loader!postcss-loader!cssobjects-loader!stylus-loader!./test.so');
+console.log(style);
+// {
+// 	test: {
+// 		'font-size': '20px'
+// 	},
+// 	anotherTest: {
+// 		'padding-top': '5px'
+// 	},
+// 	test23: {
+// 		'font-size': '23px'
+// 	}
+// }
 ```
