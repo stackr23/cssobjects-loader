@@ -1,6 +1,6 @@
 {
   "name": "cssobjects-loader",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": {
     "name": "Stefan Friedl @DoubleU23"
   },
@@ -12,7 +12,7 @@
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
-    "native-css": "git+https://github.com/DoubleU23/native-css.git#webpack-compatibility",
+    "native-css": "git+https://github.com/DoubleU23/native-css.git#feature-convertAsync",
     "path": "^0.12.7",
     "should": "^7.1.1"
   },
@@ -20,7 +20,7 @@
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
-    "native-css": "git+https://github.com/DoubleU23/native-css.git#webpack-compatibility",
+    "native-css": "git+https://github.com/DoubleU23/native-css.git#feature-convertAsync",
     "path": "^0.12.7",
     "should": "^7.1.1"
   },
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/DoubleU23/cssobjects-loader"
   },
   "homepage": "",
   "main": "index.js",

@@ -1,6 +1,7 @@
 # cssobjects-loader
 
 ### to be done  
+* write tests
 * sync callback
 * enable [nativeCss](https://github.com/doubleu23/native-css) to accept buffers
 	* load content per Buffer
