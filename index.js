@@ -2,12 +2,10 @@
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author - Stefan Friedl @DoubleU23
 */
-var loaderUtils = require('loader-utils')
-,	path = require('path')
-,	nativeCss = require('../native-css')
-,	fetchUrl = require('fetch').fetchUrl
-,	fs = require('fs')
-,	childProcess = require('child_process')
+var loaderUtils 		= require('loader-utils')
+,	path 			= require('path')
+,	nativeCss 		= require('../native-css')
+,	fs 				= require('fs')
 ;
 module.exports = function(content) {
 	this.cacheable && this.cacheable();
