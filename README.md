@@ -22,7 +22,7 @@
 
 ```Javascript
 // in your JS
-let style 	= require('css-loader!postcss-loader!cssobjects-loader!stylus-loader!./test.so');
+let style 	= require('cssobjects-loader!stylus-loader!./test.so');
 console.log(style);
 // {
 // 	test: {
