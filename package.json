@@ -1,10 +1,10 @@
 {
   "name": "cssobjects-loader",
-  "version": "0.3.2",
+  "version": "0.3.6",
   "author": {
     "name": "Stefan Friedl @DoubleU23"
   },
-  "description": "load CSS classes as JS Objects",
+  "description": "webpack - load Styles as JS Objects",
   "files": [
     "index.js"
   ],
