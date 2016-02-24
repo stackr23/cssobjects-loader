@@ -1,13 +1,13 @@
-# cssobjects-loader
+# cssobjects-loader  
+> load Styles as JS-Objects
 
-### to be done  
-* write tests
-* sync callback
-* enable [nativeCss](https://github.com/doubleu23/native-css) to accept buffers
-	* load content per Buffer
+### basic information
+* webpack loader
+* for react style properties
+* per [nativeCss](https://github.com/raphamorim/native-css)
 
 ### usage 
-```npm install cssobjects-loader```
+```npm install cssobjects-loader --save```
 
 ```Stylus
 // test.styl
@@ -22,7 +22,7 @@
 
 ```Javascript
 // in your JS
-let style 	= require('cssobjects-loader!stylus-loader!./test.so');
+let style 	= require('cssobjects-loader!stylus-loader!./test.styl');
 console.log(style);
 // {
 // 	test: {
@@ -36,3 +36,16 @@ console.log(style);
 // 	}
 // }
 ```
+> for ES6/7 usage, define loaders in the webpack config
+
+### issues
+* for objectformat and enhanced usage go to [nativeCss](https://github.com/raphamorim/native-css)
+* loader related issues or PR's are welcome
+
+### to be done  
+* check loader enhancements (cachable, params, ...)
+* react usage (native-css --react)
+* write testscripts
+* sync callback
+* enable nativeCss to accept buffers
+	* load content per Buffer
