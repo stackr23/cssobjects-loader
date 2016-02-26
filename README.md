@@ -43,9 +43,6 @@ console.log(style);
 * loader related issues or PR's are welcome
 
 ### to be done  
-* check loader enhancements (cachable, params, ...)
-* react usage (native-css --react)
+* check loader arguments (params, query, ...)
+	* react usage (native-css --react)
 * write testscripts
-* sync callback
-* enable nativeCss to accept buffers
-	* load content per Buffer
