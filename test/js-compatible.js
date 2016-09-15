@@ -1,15 +1,15 @@
-var should = require("should");
-var path = require("path");
-var fileLoader = require("../");
+var should = require('should');
+var path = require('path');
+var cssobjectsLoader = require('../');
 
 function run(resourcePath, query, content) {
-	content = content || new Buffer("1234");
+	content = content || new Buffer('1234');
 	var result = null;
 	var context = {
 		resourcePath: resourcePath,
-		query: "?" + query,
+		query: '?' + query,
 		options: {
-			context: ""
+			context: ''
 		},
 		emitFile: function(url, content2) {
 			content2.should.be.eql(content);
@@ -24,10 +24,21 @@ function test(excepted, resourcePath, query, content) {
 	run(resourcePath, query, content).should.be.eql(excepted);
 }
 
-describe("correct-filename", function() {
-	it("should return valid js", function() {
+// describe('correct-filename', function() {
+// 	it('should return valid js', function() {
 
-		test("{ mui_button { 'font-size': '20px' } }", "./test.css", "");
+// 		test('{ mui_button { 'font-size': '20px' } }', './test.css', '');
+
+// 	});
+// });
+
+
+describe('correct-filename', function() {
+	it('should return valid js', function() {
+
+		var cssObject = require('cssobjects-loader!')
+
+		cssObject.should.be.eql(content);
 
 	});
 });
