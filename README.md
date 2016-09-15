@@ -46,3 +46,5 @@ console.log(style);
 * check loader arguments (params, query, ...)
 	* react usage (native-css --react)
 * write testscripts
+* clean dependecies
+* ES6 ?
