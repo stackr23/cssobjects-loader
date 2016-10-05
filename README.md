@@ -5,25 +5,27 @@
 * webpack loader
 * per [nativeCss](https://github.com/raphamorim/native-css)
 * transforms css-properties to camelCase
-* very handy for react/material-ui style injections
+* very handy for react style injections
 
 ### usage 
 ```npm install cssobjects-loader --save```
 
+__your.so__
 ```Stylus
-// test.styl
 .test
 	font-size 20px
 #anotherTest
 	padding-top 5px
 .test23
 	font-size 23px
-
+    .testInner
+        font-decoration none
 ```
 
+__your.js__
 ```Javascript
-// in your JS
-let style 	= require('cssobjects-loader!stylus-loader!./test.styl');
+let style 	= require('cssobjects-loader!stylus-loader!./your.so');
+
 console.log(style);
 // {
 // 	test: {
@@ -34,25 +36,47 @@ console.log(style);
 // 	},
 // 	test23: {
 // 		'fontSize': '23px'
+//      testInner: { // atm: only 1 lvl deep
+//          'fontDecoration': 'none'
+//      }
 // 	}
 // }
 ```
 
-> to keep the properties as they are, pass the query 'transform=false' to the loader
+__additional information__
+> to __keep the style properties__ as they are, pass the query 'transform=false' to the loader  
+```Javascript
+let style   = require('cssobjects-loader?transform=false!stylus-loader!./your.so');
+```
 
-> for ES6/7 usage, define loaders in the webpack config
+> for __pure css__ just use
+```Javascript
+let style   = require('cssobjects-loader!./your.css');
+```
+
+> for __other style preprocessor__ syntax (less, sass, scss, ...)
+> just add the realated loader (the loader has to output css!)
+```Javascript
+let style   = require('cssobjects-loader!sass-loader!./your.sass');
+```
+
+> for ES6/7 usage, __define loaders in the webpack config__  
+```Javascript
+{
+    test: /\.(so)$/, // .so = custom file extension
+    loader: 'cssobjects-loader?transform=true!stylus-loader'
+}
+// so you can just
+// import yourStyleObject from '/styles/your.so'
+```
 
 ### issues
 * for objectformat and enhanced usage go to [nativeCss](https://github.com/raphamorim/native-css)
 * loader related issues or PR's are welcome
-* subClass structure
-    * stabilize 'injectSubClasses'
-    * if transform = false, 'injectSubClasses' isn't called
+* style's subclasses recognized only 1 lvl deep
+  * others are defined as followed: {parentClass__subClass1__subClass2: {}}
 
 ### to be done  
-* check loader arguments (params, query, ...)
-	* react usage (native-css --react)
+* inject style's subclasses recursively
 * write testscripts, DocBlocks, Comments
-* clean dependecies
-* enhanced 'transform' handling
-* ES6 ?
+* ES6 (/dist + buildScript)
