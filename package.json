@@ -16,10 +16,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "fs": "0.0.2",
-    "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
-    "path": "^0.12.7",
     "should": "^7.1.1"
   },
   "scripts": {
