@@ -4,7 +4,7 @@
   "author": {
     "name": "Stefan Friedl @DoubleU23"
   },
-  "description": "webpack - load Styles as JS Objects",
+  "description": "webpack - load Styles as JS Objects (reactStyleObjects)",
   "files": [
     "index.js",
     "lib"
@@ -27,20 +27,18 @@
     "url": "https://github.com/DoubleU23/cssobjects-loader"
   },
   "keywords": [
-    "native-css",
-    "cssobjects",
-    "styleobjects",
-    "style-loader",
-    "css-loader",
-    "webpack-loader",
-    "react-styles",
-    "jscss",
-    "cssjs"
+    "native-css", "nativeCss",
+    "cssobjects", "css objects",
+    "styleobjects", "style objects",
+    "webpack-loader", "style-loader", "css-loader",
+    "react-styles", "react styles",
+    "jscss", "cssjs"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/DoubleU23/cssobjects-loader",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib": "lib"
   },
   "license": "MIT",
   "_id": "cssobjects-loader@0.2.5",
