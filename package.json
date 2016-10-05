@@ -6,7 +6,8 @@
   },
   "description": "webpack - load Styles as JS Objects",
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "dependencies": {
     "fs": "0.0.2",
