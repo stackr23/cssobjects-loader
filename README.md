@@ -1,4 +1,4 @@
-# cssobjects-loader  
+# cssobjects-loader [![Known Vulnerabilities](https://snyk.io/test/npm/cssobjects-loader/badge.svg)](https://snyk.io/test/npm/cssobjects-loader)  
 > load Styles as JS-Objects
 
 ### basic information
