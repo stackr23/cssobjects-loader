@@ -3,6 +3,7 @@
 
 [![npm version](https://badge.fury.io/js/cssobjects-loader.svg)](https://badge.fury.io/js/cssobjects-loader)
 [![dependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/status.svg)](https://david-dm.org/doubleu23/cssobjects-loader)
+[![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)  
 
 ### basic information
