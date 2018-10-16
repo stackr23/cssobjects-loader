@@ -82,6 +82,7 @@ let style   = require('cssobjects-loader!sass-loader!./your.sass');
   * others are defined as followed: {parentClass__subClass1__subClass2: {}}
 
 ### to be done  
-* inject style's subclasses recursively
-* write testscripts, DocBlocks, Comments
+* inject style's subclasses recursively  
+* use [humps](https://www.npmjs.com/package/humps) for objectKeys  
+* write testscripts, DocBlocks, Comments  
 * ES6 (/dist + buildScript)
