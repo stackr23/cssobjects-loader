@@ -1,6 +1,7 @@
 # cssobjects-loader
 > **load StyleSheets as JS-Objects**
 
+[![Build Status](https://travis-ci.com/stackr23/cssobjects-loader.svg?branch=master)](https://travis-ci.com/stackr23/cssobjects-loader)
 [![Maintenance][maintenance-img]][maintenance-url]
 [![npm version](https://badge.fury.io/js/cssobjects-loader.svg)](https://badge.fury.io/js/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
