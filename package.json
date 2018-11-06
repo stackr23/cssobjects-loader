@@ -10,12 +10,12 @@
     "lib"
   ],
   "dependencies": {
-    "fs": "0.0.2",
-    "loader-utils": "^0.2.12",
-    "native-css": "^2.0.0",
-    "path": "^0.12.7"
   },
   "devDependencies": {
+    "fs": "0.0.2",
+    "native-css": "^2.0.0",
+    "path": "^0.12.7",
+    "loader-utils": "^1.1.0",
     "mocha": "^2.3.4",
     "should": "^7.1.1"
   },
@@ -27,12 +27,19 @@
     "url": "https://github.com/DoubleU23/cssobjects-loader"
   },
   "keywords": [
-    "native-css", "nativeCss",
-    "cssobjects", "css objects",
-    "styleobjects", "style objects",
-    "webpack-loader", "style-loader", "css-loader",
-    "react-styles", "react styles",
-    "jscss", "cssjs"
+    "native-css",
+    "nativeCss",
+    "cssobjects",
+    "css objects",
+    "styleobjects",
+    "style objects",
+    "webpack-loader",
+    "style-loader",
+    "css-loader",
+    "react-styles",
+    "react styles",
+    "jscss",
+    "cssjs"
   ],
   "homepage": "https://github.com/DoubleU23/cssobjects-loader",
   "main": "index.js",

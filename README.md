@@ -1,10 +1,13 @@
 # cssobjects-loader
 > **load StyleSheets as JS-Objects**
 
+[![Maintenance][maintenance-img]][maintenance-url]
 [![npm version](https://badge.fury.io/js/cssobjects-loader.svg)](https://badge.fury.io/js/cssobjects-loader)
-[![dependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/status.svg)](https://david-dm.org/doubleu23/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)  
+
+[maintenance-img]: https://img.shields.io/badge/Maintained%3F-yes-green.svg
+[maintenance-url]: https://GitHub.com/stackR23/cssobjects-loader/graphs/commit-activity
 
 ## WIP [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 > after a long time without maintenance,  
@@ -20,7 +23,7 @@
 * very handy for react style injections
 
 ### usage 
-```npm install cssobjects-loader --save```
+```npm install cssobjects-loader --save-dev```
 
 __your.so__
 ```Stylus
