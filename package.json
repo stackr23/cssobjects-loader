@@ -12,7 +12,7 @@
   "dependencies": {
     "fs": "0.0.2",
     "loader-utils": "^0.2.12",
-    "native-css": "^1.2.3",
+    "native-css": "^2.0.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
