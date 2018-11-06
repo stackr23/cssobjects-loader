@@ -6,6 +6,13 @@
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)  
 
+## WIP [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
+> after a long time without maintenance,  
+> im __working on a stable v1 with webpack 4 compatibility__...  
+> that process may take a few weeks, but you can help with PR's
+
+[pr-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+
 ### basic information
 * webpack loader
 * per [nativeCss](https://github.com/raphamorim/native-css)
@@ -78,8 +85,9 @@ let style   = require('cssobjects-loader!sass-loader!./your.sass');
 ### issues
 * for objectformat and enhanced usage go to [nativeCss](https://github.com/raphamorim/native-css)
 * loader related issues or PR's are welcome
-* style's subclasses recognized only 1 lvl deep
-  * others are defined as followed: {parentClass__subClass1__subClass2: {}}
+* __known issues__:
+    * style's subclasses recognized only 1 lvl deep  
+    (others are defined as `{parentClass__subClass1__subClass2: {}}`)
 
 ### to be done  
 * inject style's subclasses recursively  
