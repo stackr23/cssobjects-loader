@@ -1,0 +1,17 @@
+# env settings
+language: node_js
+node_js: 9
+# travis script adaptions
+branches:
+  only:
+  - master
+  - development
+
+# before_install:
+#   - npm install -g 
+
+install:
+  - npm install
+
+script:
+  - npm run test

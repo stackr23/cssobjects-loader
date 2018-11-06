@@ -9,8 +9,7 @@
     "index.js",
     "lib"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "fs": "0.0.2",
     "native-css": "^2.0.0",
@@ -20,7 +19,7 @@
     "should": "^7.1.1"
   },
   "scripts": {
-    "test": "echo 'no testscript defined.'"
+    "test": "mocha ./test/*.js"
   },
   "repository": {
     "type": "git",

@@ -1,10 +1,9 @@
-var should = require('should');
-var path = require('path');
-var cssobjectsLoader = require('../');
+var should 				= require('should')
+var path 				= require('path')
 
 function run(resourcePath, query, content) {
-	content = content || new Buffer('1234');
-	var result = null;
+	content = content || new Buffer('1234')
+	var result = null
 	var context = {
 		resourcePath: resourcePath,
 		query: '?' + query,
@@ -12,33 +11,38 @@ function run(resourcePath, query, content) {
 			context: ''
 		},
 		emitFile: function(url, content2) {
-			content2.should.be.eql(content);
-			result = url;
+			content2.should.be.eql(content)
+			result = url
 		}
-	};
-	fileLoader.call(context, content);
-	return result;
+	}
+	cssobjectsLoader.call(context, content)
+	return result
 }
 
 function test(excepted, resourcePath, query, content) {
-	run(resourcePath, query, content).should.be.eql(excepted);
+	run(resourcePath, query, content).should.be.eql(excepted)
 }
+
+describe('module import', function() {
+	it('should be imported without error', function() {
+
+		try {
+			var cssobjectsLoader = require('../index.js')
+		}
+		catch (err) {
+			err.should.be.eql(null)
+			console.error(err)
+		}
+	})
+})
+
 
 // describe('correct-filename', function() {
 // 	it('should return valid js', function() {
 
-// 		test('{ mui_button { 'font-size': '20px' } }', './test.css', '');
+// 		// var cssObject = require('cssobjects-loader!')
 
-// 	});
-// });
+// 		cssObject.should.be.eql(content)
 
-
-describe('correct-filename', function() {
-	it('should return valid js', function() {
-
-		var cssObject = require('cssobjects-loader!')
-
-		cssObject.should.be.eql(content);
-
-	});
-});
+// 	})
+// })
