@@ -16,7 +16,7 @@
     "native-css": "^2.0.0",
     "path": "^0.12.7",
     "loader-utils": "^1.1.0",
-    "mocha": "^2.3.4",
+    "mocha": "^4.0.0",
     "should": "^7.1.1"
   },
   "scripts": {
