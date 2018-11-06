@@ -5,7 +5,7 @@
 [![Maintenance][maintenance-img]][maintenance-url]
 [![npm version](https://badge.fury.io/js/cssobjects-loader.svg)](https://badge.fury.io/js/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)  
+[![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/cssobjects-loader.svg)](https://greenkeeper.io/)  
 
 [maintenance-img]: https://img.shields.io/badge/Maintained%3F-yes-green.svg
 [maintenance-url]: https://GitHub.com/stackR23/cssobjects-loader/graphs/commit-activity
