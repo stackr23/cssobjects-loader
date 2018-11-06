@@ -2,28 +2,26 @@
 > **load StyleSheets as JS-Objects**
 
 [![Build Status](https://travis-ci.com/stackr23/cssobjects-loader.svg?branch=master)](https://travis-ci.com/stackr23/cssobjects-loader)
-[![Maintenance][maintenance-img]][maintenance-url]
 [![npm version](https://badge.fury.io/js/cssobjects-loader.svg)](https://badge.fury.io/js/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)  
+[![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)<br />
+[![Maintenance][maintenance-img]][maintenance-url]
+[![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 
 [maintenance-img]: https://img.shields.io/badge/Maintained%3F-yes-green.svg
 [maintenance-url]: https://GitHub.com/stackR23/cssobjects-loader/graphs/commit-activity
-
-## WIP [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
-> after a long time without maintenance,  
-> im __working on a stable v1 with webpack 4 compatibility__...  
-> that process may take a few weeks, but you can help with PR's
-
 [pr-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 
-### basic information
+## v0.5.0 released  
+> __stable version with webpack 4 compatibility__  
+
+### what is it?
 * webpack loader
 * per [nativeCss](https://github.com/raphamorim/native-css)
 * transforms css-properties to camelCase
 * very handy for react style injections
 
-### usage 
+### how to use it? 
 ```npm install cssobjects-loader --save-dev```
 
 __your.so__
@@ -59,7 +57,7 @@ console.log(style);
 // }
 ```
 
-__additional information__
+__what else to know?__
 > to __keep the style properties__ as they are, pass the query 'transform=false' to the loader  
 ```Javascript
 let style   = require('cssobjects-loader?transform=false!stylus-loader!./your.so');
@@ -91,7 +89,8 @@ let style   = require('cssobjects-loader!sass-loader!./your.sass');
 * loader related issues or PR's are welcome
 * __known issues__:
     * style's subclasses recognized only 1 lvl deep  
-    (others are defined as `{parentClass__subClass1__subClass2: {}}`)
+    (others are defined as `{parentClass__subClass1__subClass2: {}}`)  
+    * native-css not found (issue #18)
 
 ### to be done  
 * inject style's subclasses recursively  
