@@ -14,18 +14,18 @@ module.exports = function(content) {
   if (process.env.NODE_ENV === 'production')
     this.cacheable && this.cacheable()
 
-  if(!this.emitFile)
-    throw new Error('emitFile is required from module system')
+  var options   = Object.assign(
+    {},
+    {transform: true}, // defaultOptions
+    loaderUtils.getOptions(this) // could be null
+  )
 
-  var query     = loaderUtils.parseQuery(this.query)
-  ,   transform = typeof query.transform === 'boolean' ? query.transform : true
-  ,   url       = loaderUtils.interpolateName(this, query.name || '[hash].[ext]', {
-      context:    query.context || this.options.context,
-      content:    content,
-      regExp:     query.regExp
-    })
-  ,   result    = nativeCss.convert(content)
-  ,   returnVal = transform ? transformToNestedDomStyleObjects(result) : result
+  // TBD: interpolateName()
+  // https://github.com/webpack/loader-utils#interpolatename  
+
+  var result    = nativeCss.convert(content)
+  //  TBD: use "humps" for transformation
+  ,   returnVal = options.transform ? transformToNestedDomStyleObjects(result) : result
 
   return 'module.exports =  ' + JSON.stringify(returnVal)
 }
