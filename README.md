@@ -2,7 +2,7 @@
 > **load StyleSheets as JS-Objects**
 
 [![Build Status](https://travis-ci.com/stackr23/cssobjects-loader.svg?branch=master)](https://travis-ci.com/stackr23/cssobjects-loader)
-[![npm version](https://badge.fury.io/js/cssobjects-loader.svg?v051)](https://badge.fury.io/js/cssobjects-loader)
+[![npm version](https://badge.fury.io/js/cssobjects-loader.svg?v060)](https://badge.fury.io/js/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)<br />
 [![Maintenance][maintenance-img]][maintenance-url]
