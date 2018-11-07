@@ -2,7 +2,7 @@
 > **load StyleSheets as JS-Objects**
 
 [![Build Status](https://travis-ci.com/stackr23/cssobjects-loader.svg?branch=master)](https://travis-ci.com/stackr23/cssobjects-loader)
-[![npm version](https://badge.fury.io/js/cssobjects-loader.svg)](https://badge.fury.io/js/cssobjects-loader)
+[![npm version](https://badge.fury.io/js/cssobjects-loader.svg?v051)](https://badge.fury.io/js/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)<br />
 [![Maintenance][maintenance-img]][maintenance-url]
@@ -60,18 +60,18 @@ console.log(style);
 __what else to know?__
 > to __keep the style properties__ as they are, pass the query 'transform=false' to the loader  
 ```Javascript
-let style   = require('cssobjects-loader?transform=false!stylus-loader!./your.so');
+let style = require('cssobjects-loader?transform=false!stylus-loader!./your.so');
 ```
 
 > for __pure css__ just use
 ```Javascript
-let style   = require('cssobjects-loader!./your.css');
+let style = require('cssobjects-loader!./your.css');
 ```
 
 > for __other style preprocessor__ syntax (less, sass, scss, ...)
 > just add the realated loader (the loader has to output css!)
 ```Javascript
-let style   = require('cssobjects-loader!sass-loader!./your.sass');
+let style = require('cssobjects-loader!sass-loader!./your.sass');
 ```
 
 > for ES6/7 usage, __define loaders in the webpack config__  
