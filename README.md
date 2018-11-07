@@ -87,13 +87,11 @@ let style   = require('cssobjects-loader!sass-loader!./your.sass');
 ### issues
 * for objectformat and enhanced usage go to [nativeCss](https://github.com/raphamorim/native-css)
 * loader related issues or PR's are welcome
-* __known issues__:
-    * style's subclasses recognized only 1 lvl deep  
-    (others are defined as `{parentClass__subClass1__subClass2: {}}`)  
+* __known issues__: 
     * native-css not found (issue #18)
 
-### to be done  
-* inject style's subclasses recursively  
-* use [humps](https://www.npmjs.com/package/humps) for objectKeys  
-* write testscripts, DocBlocks, Comments  
-* ES6 (/dist + buildScript)
+### v1 roadmap  
+* [x] inject style's subclasses recursively  
+* [ ] use [humps](https://www.npmjs.com/package/humps) for objectKeys  
+* [ ] write testscripts, DocBlocks, Comments  
+* [ ] ES6 (/dist + buildScript)
