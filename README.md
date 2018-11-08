@@ -1,18 +1,18 @@
-# cssobjects-loader
+# cssobjects-loader (deprecated)
 > **load StyleSheets as JS-Objects**
 
 [![Build Status](https://travis-ci.com/stackr23/cssobjects-loader.svg?branch=master)](https://travis-ci.com/stackr23/cssobjects-loader)
 [![npm version](https://badge.fury.io/js/cssobjects-loader.svg?v060)](https://badge.fury.io/js/cssobjects-loader)
 [![devDependencies Status](https://david-dm.org/doubleu23/cssobjects-loader/dev-status.svg)](https://david-dm.org/doubleu23/cssobjects-loader?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)<br />
-[![Maintenance][maintenance-img]][maintenance-url]
-[![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
+[![Known Vulnerabilities](https://snyk.io/test/github/doubleu23/cssobjects-loader/badge.svg)](https://snyk.io/test/github/doubleu23/cssobjects-loader)
 
-[maintenance-img]: https://img.shields.io/badge/Maintained%3F-yes-green.svg
-[maintenance-url]: https://GitHub.com/stackR23/cssobjects-loader/graphs/commit-activity
-[pr-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+## DEPRECATED - use [`@stackr23/styleobjects-loader`](https://github.com/stackr23/styleobjects-loader)!
+> cssobjecs-loader maintenance is closed!  
+v1.0.0 will be released as scoped package [`@stackr23/styleobjects-loader`](https://github.com/stackr23/styleobjects-loader)
 
-## v0.5.0 released  
+<hr />
+
+#### v0.5.0 released  
 > __stable version with webpack 4 compatibility__  
 
 ### what is it?
@@ -89,9 +89,3 @@ let style = require('cssobjects-loader!sass-loader!./your.sass');
 * loader related issues or PR's are welcome
 * __known issues__: 
     * native-css not found (issue #18)
-
-### v1 roadmap  
-* [x] inject style's subclasses recursively  
-* [ ] use [humps](https://www.npmjs.com/package/humps) for objectKeys  
-* [ ] write testscripts, DocBlocks, Comments  
-* [ ] ES6 (/dist + buildScript)
