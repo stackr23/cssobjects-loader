@@ -14,7 +14,7 @@
     "fs": "0.0.2",
     "native-css": "^2.0.0",
     "path": "^0.12.7",
-    "loader-utils": "^1.1.0",
+    "loader-utils": "^1.2.1",
     "mocha": "^5.0.3",
     "should": "^7.1.1"
   },
